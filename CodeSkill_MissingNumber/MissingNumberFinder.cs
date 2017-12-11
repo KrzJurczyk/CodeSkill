@@ -26,7 +26,7 @@ namespace CodeSkill_MissingNumber
             {
                 for (int i = 0; i < _tab.Length - 1; i++)
                 {
-                    if (_tab[i + 1] - _tab[i] != 1)
+                    if ((_tab[i + 1] - _tab[i] != 1) || ((_tab[i] * -1) - (_tab[i+1] * -1) !=  1))
                     {
                         _result = _tab[i] + 1;
                         break;

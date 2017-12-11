@@ -10,15 +10,15 @@ namespace CodeSkill_11._12._2017.Tests
         [Test]
         public void FirstMissingNumber_WithMissingNumbers_UpByOne()
         {
-            var w = new int[] { -3, -2, 2, 4 };
+            var w = new int[] {-4, -3, -1, 2, 4 };
             var a = new CodeSkill_MissingNumber.MissingNumberFinder(w);
-            Assert.That(a.FirstMissingNumber, Is.EqualTo(-1));
+            Assert.That(a.FirstMissingNumber, Is.EqualTo(-2));
         }
 
         [Test]
         public void FirstMissingNumber_WithAllNumbers_UpByOne()
         {
-            var w = new int[] { -3, -2, -1, 0, 1, 2, 3, 4 };
+            var w = new int[] {-4, -3, -2, -1, 0, 1, 2, 3, 4 };
             var a = new CodeSkill_MissingNumber.MissingNumberFinder(w);
             Assert.That(a.FirstMissingNumber, Is.EqualTo(5));
         }
